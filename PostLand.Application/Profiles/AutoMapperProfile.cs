@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using PostLand.Application.Features.Posts.Queries.GetPostDetail;
 using PostLand.Application.Features.Posts.Queries.GetPostList;
 using PostLand.Domain.Entites;
 
@@ -9,6 +10,7 @@ namespace PostLand.Application.Profiles
         public AutoMapperProfile()
         {
           CreateMap<Post, GetPostListVM>().ReverseMap();
+          CreateMap<Post, GetPostDetailVm>().ReverseMap();
         }
         
     }

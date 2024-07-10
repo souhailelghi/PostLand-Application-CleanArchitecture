@@ -6,6 +6,6 @@ namespace PostLand.Application.Contracts
     {
         Task<IReadOnlyList<Post>> GetAllPostsAsync(bool includeCategory );
 
-        Task<Post> GetListByTagIdAsync(Guid id, bool includeCategory);
+        Task<Post> GetPostByIdAsync(Guid id, bool includeCategory);
     }
 }
